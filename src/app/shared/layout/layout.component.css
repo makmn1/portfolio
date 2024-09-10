@@ -29,7 +29,7 @@
   background-color: var(--sys-surface-container-lowest);
   border-radius: 16px;
 
-  width: fit-content;
+  width: 100%;
 }
 
 .column2-row2-footer {

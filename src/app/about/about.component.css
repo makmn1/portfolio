@@ -12,7 +12,8 @@
 #about-title-container {
   padding: 32px;
 
-  align-self: start;
+  width: 1024px;
+  align-self: center;
 
   h1 {
     font-size: 96px;
@@ -21,12 +22,12 @@
     text-align: start;
 
     margin: 0;
+    padding: 0 32px;
   }
 }
 
 #about-content-container {
-  width: 100%;
-  max-width: 1024px;
+  width: 1024px;
 
   display: flex;
   flex-direction: row;
