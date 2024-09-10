@@ -1,0 +1,23 @@
+#works-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#works-title-container {
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: bold;
+}
+
+#works-cards-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0 16px 64px;
+  gap: 64px;
+}
