@@ -1,0 +1,35 @@
+<div class="card-container">
+  @if (imageUrl) {
+    <div class="card-image-container">
+      <img [ngSrc]=imageUrl [alt]=imageAltText fill />
+    </div>
+  }
+
+  <div class="card-content-container">
+    <div class="card-title-container">
+      <h2 class="card-title">{{ title }}</h2>
+
+      @if (subtitle) {
+        <p class="card-subtitle">{{ subtitle }}</p>
+      }
+
+    </div>
+
+    <p class="card-description">{{ description }}</p>
+
+    <div class="action-buttons">
+      @if(primaryActionText) {
+        <a mat-flat-button class="action-button" [href]=primaryLink target="_blank" rel="noopener noreferrer">
+          {{ primaryActionText }}
+        </a>
+      }
+
+      @if(secondaryActionText) {
+        <a mat-stroked-button class="action-button" [href]=secondaryLink target="_blank" rel="noopener noreferrer">
+          {{ secondaryActionText }}
+        </a>
+      }
+    </div>
+  </div>
+
+</div>
