@@ -1,1 +1,36 @@
-<p>home works!</p>
+<main id="home-container">
+  <div id="home-text-container">
+    <h1 id="home-heading">Home</h1>
+    <p id="home-description">Learn more about me, explore projects, and get in touch. Take a look around!</p>
+  </div>
+  <div id="home-cards-container">
+    <app-home-card
+      title="About Me"
+      description="Get a brief summary of who I am and my career history as a Software Engineer."
+      link="/app/about"
+      navigateText="Learn more">
+    </app-home-card>
+
+    <app-home-card
+      title="Works"
+      description="Check out the places I’ve worked at, the projects I’ve worked on, and the training programs I’ve been a part of!"
+      link="/app/works"
+      navigateText="Explore work">
+    </app-home-card>
+
+    <app-home-card
+      title="View My Resume"
+      description="View my resume directly in the browser, if it supports viewing PDFs. You can also download a copy."
+      link="/app/resume"
+      navigateText="View resume">
+    </app-home-card>
+
+    <app-home-card
+      title="Contact Me"
+      description="Want to get in touch? Fill out the contact form and I’ll get back to you soon!"
+      link="/app/contact"
+      navigateText="Contact me">
+    </app-home-card>
+
+  </div>
+</main>
