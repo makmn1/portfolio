@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {MatButton} from "@angular/material/button";
+import {MatAnchor, MatButton} from "@angular/material/button";
 import {NgOptimizedImage} from "@angular/common";
 import {RouterLink} from "@angular/router";
 
@@ -9,7 +9,8 @@ import {RouterLink} from "@angular/router";
   imports: [
     MatButton,
     NgOptimizedImage,
-    RouterLink
+    RouterLink,
+    MatAnchor
   ],
   templateUrl: './landing.component.html',
   styleUrl: './landing.component.css'
