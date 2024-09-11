@@ -1,4 +1,8 @@
-<main id="contact-component">
+<main id="contact-component"
+      [@fadeInMoveDown]
+      [class.fade-in-hidden]="!animationDone"
+      (@fadeInMoveDown.done)="onAnimationDone()"
+>
   <div id="contact-text-container">
     <h1 id="contact-heading">Contact</h1>
 

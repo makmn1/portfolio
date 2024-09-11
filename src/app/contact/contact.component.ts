@@ -4,13 +4,15 @@ import {MatButton} from "@angular/material/button";
 import {MatError, MatFormField, MatLabel} from "@angular/material/form-field";
 import {MatInput} from "@angular/material/input";
 import {HttpClient, HttpHeaders} from "@angular/common/http";
+import {fadeInMoveDownAnimation} from "../shared/animations/fadeInMoveDown.animation";
 
 @Component({
   selector: 'app-contact',
   standalone: true,
   imports: [ReactiveFormsModule, MatButton, MatFormField, MatInput, MatLabel, MatError],
   templateUrl: './contact.component.html',
-  styleUrl: './contact.component.css'
+  styleUrl: './contact.component.css',
+  animations: [fadeInMoveDownAnimation]
 })
 export class ContactComponent {
 
@@ -73,5 +75,11 @@ export class ContactComponent {
         }
       })
     }
+  }
+
+  animationDone = false;
+
+  onAnimationDone() {
+    this.animationDone = true;
   }
 }

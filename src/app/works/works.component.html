@@ -1,4 +1,9 @@
-<main id="works-content-container">
+<main
+  id="works-content-container"
+  [@fadeInMoveDown]
+  [class.fade-in-hidden]="!animationDone"
+  (@fadeInMoveDown.done)="onAnimationDone()"
+>
   <div id="works-title-container">
     <h1>Works</h1>
   </div>
@@ -7,13 +12,24 @@
       imageUrl="assets/Headshot_2024.jpg"
       imageAltText="Mohamed Mohamed"
       title="My Portfolio"
-      subtitle="Designer & Developer"
-      description="Yes, that's this portfolio you're viewing now! Made with Angular v18 following
+      subtitle="FastTrack Project: Designer & Developer"
+      description="Yes, that's this portfolio you're viewing now! Made during FastTrack following
       Google's Material Design 3 specs"
       primaryLink="https://github.com/makmn1/portfolio"
       primaryActionText="View code"
       secondaryLink="https://www.figma.com/design/c8R9k5rEHv2mcrPu5m6tCH/portfolio-design?node-id=20-790&t=gWYWKxOd3T7a9SD0-1"
       secondaryActionText="View design docs"
+    >
+    </app-work-card>
+
+    <app-work-card
+      imageUrl="assets/logos/Chat_Bubble_By_Alexander_Shatov.jpg"
+      imageAltText="chat bubble"
+      title="Twitter API"
+      subtitle="FastTrack Project: Developer"
+      description="Worked on a team to create a backend API with Spring Boot. Allows users to post, repost, and reply to tweets"
+      primaryLink="https://github.com/fasttrackd-student-work/spring-assessment-social-media-team-1-august-cohort-2024"
+      primaryActionText="View code"
     >
     </app-work-card>
 

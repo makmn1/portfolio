@@ -2,6 +2,7 @@ import {Component, Input} from '@angular/core';
 import {MatAnchor} from "@angular/material/button";
 import {NgOptimizedImage} from "@angular/common";
 import {UrlTree} from "@angular/router";
+import {fadeInMoveDownAnimation} from "../../shared/animations/fadeInMoveDown.animation";
 
 @Component({
   selector: 'app-work-card',
@@ -11,7 +12,8 @@ import {UrlTree} from "@angular/router";
         NgOptimizedImage
     ],
   templateUrl: './work-card.component.html',
-  styleUrl: './work-card.component.css'
+  styleUrl: './work-card.component.css',
+  animations: [fadeInMoveDownAnimation]
 })
 export class WorkCardComponent {
 
@@ -41,4 +43,10 @@ export class WorkCardComponent {
 
   @Input()
   secondaryActionText: string = "";
+
+  animationDone = false;
+
+  onAnimationDone() {
+    this.animationDone = true;
+  }
 }

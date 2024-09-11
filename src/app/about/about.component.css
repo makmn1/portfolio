@@ -35,6 +35,10 @@
   gap: 32px;
 }
 
+.loading-icon {
+  margin: 0 auto;
+}
+
 #about-content {
   flex: 1;
 
