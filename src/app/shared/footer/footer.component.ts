@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {MatIcon} from "@angular/material/icon";
 import {NgOptimizedImage} from "@angular/common";
+import {APP_BASE_HREF} from '@angular/common';
 
 @Component({
   selector: 'app-footer',
@@ -13,5 +14,7 @@ import {NgOptimizedImage} from "@angular/common";
   styleUrl: './footer.component.css'
 })
 export class FooterComponent {
+
+  contactLink = `${APP_BASE_HREF}/app/contact`
 
 }
