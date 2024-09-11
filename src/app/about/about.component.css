@@ -70,7 +70,7 @@
 
 #hero-image {
   width: 330px;
-  height: 330px;
+  height: auto;
   border-radius: 300px;
   transform: rotateY(180deg);
 }
