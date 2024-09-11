@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {MatAnchor, MatButton} from "@angular/material/button";
 import {RouterLink} from "@angular/router";
 import {HomeCardComponent} from "./home-card/home-card.component";
+import {fadeInMoveDownAnimation} from "../shared/animations/fadeInMoveDown.animation";
 
 @Component({
   selector: 'app-home',
@@ -13,8 +14,13 @@ import {HomeCardComponent} from "./home-card/home-card.component";
     HomeCardComponent
   ],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  styleUrl: './home.component.css',
+  animations: [fadeInMoveDownAnimation]
 })
 export class HomeComponent {
+  animationDone = false;
 
+  onAnimationDone() {
+    this.animationDone = true;
+  }
 }

@@ -1,4 +1,9 @@
-<main id="home-container">
+<main
+  id="home-container"
+  [@fadeInMoveDown]
+  [class.fade-in-hidden]="!animationDone"
+  (@fadeInMoveDown.done)="onAnimationDone()"
+>
   <div id="home-text-container">
     <h1 id="home-heading">Home</h1>
     <p id="home-description">Learn more about me, explore projects, and get in touch. Take a look around!</p>

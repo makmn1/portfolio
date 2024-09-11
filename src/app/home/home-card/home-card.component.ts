@@ -1,6 +1,7 @@
 import {Component, Input} from '@angular/core';
 import {MatAnchor} from "@angular/material/button";
 import {RouterLink, UrlTree} from "@angular/router";
+import {fadeInMoveDownAnimation} from "../../shared/animations/fadeInMoveDown.animation";
 
 @Component({
   selector: 'app-home-card',
@@ -10,7 +11,8 @@ import {RouterLink, UrlTree} from "@angular/router";
     RouterLink
   ],
   templateUrl: './home-card.component.html',
-  styleUrl: './home-card.component.css'
+  styleUrl: './home-card.component.css',
+  animations: [fadeInMoveDownAnimation]
 })
 export class HomeCardComponent {
 
@@ -25,4 +27,10 @@ export class HomeCardComponent {
 
   @Input()
   navigateText: string = "Go to";
+
+  animationDone = false;
+
+  onAnimationDone() {
+    this.animationDone = true;
+  }
 }

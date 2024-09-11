@@ -1,4 +1,9 @@
-<div class="card-container">
+<div
+  class="card-container"
+  [@fadeInMoveDown]
+  [class.fade-in-hidden]="!animationDone"
+  (@fadeInMoveDown.done)="onAnimationDone()"
+>
   @if (imageUrl) {
     <div class="card-image-container">
       <img [ngSrc]=imageUrl [alt]=imageAltText fill />
