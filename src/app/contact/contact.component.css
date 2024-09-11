@@ -1,0 +1,74 @@
+#contact-component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  justify-self: center;
+  align-self: center;
+
+  margin: 32px 0 32px;
+
+  gap: 16px;
+  padding: 0 128px;
+}
+
+#contact-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 8px;
+}
+
+#contact-heading {
+  font-size: 57px;
+  line-height: 64px;
+  font-weight: bold;
+
+  margin: 0;
+}
+
+#contact-description {
+  font-size: 16px;
+  line-height: 24px;
+
+  margin: 0;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  min-width: 360px;
+  gap: 16px;
+}
+
+.field-container {
+  width: 100%;
+
+}
+
+#contact-form-submit-button {
+  width: 100%;
+}
+
+.form-submission-success {
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: bold;
+
+  color: var(--sys-primary);
+}
+
+.form-submission-failed {
+  font-weight: bold;
+  text-align: center;
+
+  width: 360px;
+
+  color: var(--sys-error)
+}

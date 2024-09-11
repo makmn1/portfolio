@@ -1,1 +1,63 @@
-<p>contact works!</p>
+<main id="contact-component">
+  <div id="contact-text-container">
+    <h1 id="contact-heading">Contact</h1>
+
+    @if(!formSubmissionSuccessful) {
+      <p id="contact-description">Want to send me a message? Just submit this form!</p>
+    }
+  </div>
+
+  @if (formSubmissionSuccessful) {
+    <p class="form-submission-success">Form successfully submitted!</p>
+  } @else {
+    <form id="contact-form" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+
+      <mat-form-field class="field-container">
+        <mat-label>Name</mat-label>
+        <input matInput required placeholder="John Doe" formControlName="name">
+        <mat-error class="error-message">Name is required</mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="field-container">
+        <mat-label>Email</mat-label>
+        <input matInput required placeholder="johndoe@arkham.org" type="email" formControlName="email">
+        <mat-error class="error-message">A valid email is required</mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="field-container">
+        <mat-label>Subject</mat-label>
+        <input matInput required placeholder="What's on your mind?" formControlName="subject">
+        <mat-error class="error-message">Subject is required</mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="field-container">
+        <mat-label>Message</mat-label>
+        <textarea matInput required placeholder="Let's get some details..." formControlName="message"></textarea>
+        <mat-error class="error-message">Message is required</mat-error>
+      </mat-form-field>
+
+      <p id="form-status-text">
+        @if (contactForm.invalid) {
+          Please fill all fields before submitting
+        } @else {
+          Form is ready to submit!
+        }
+      </p>
+
+
+      <button
+        id="contact-form-submit-button"
+        mat-flat-button type="submit"
+        [disabled]="contactForm.invalid"
+      >
+        Submit
+      </button>
+
+      @if(formSubmissionFailed) {
+        <p class="form-submission-failed">
+          Looks like there was an issue submitting this form. Try again later.
+        </p>
+      }
+    </form>
+  }
+</main>
