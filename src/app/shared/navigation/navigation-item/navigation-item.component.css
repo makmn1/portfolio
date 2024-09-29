@@ -11,6 +11,14 @@
   padding: 16px;
 }
 
+@media (max-width: 450px) {
+  .nav-item-padded {
+    padding: 16px 4px;
+  }
+}
+
+
+
 .nav-item.active {
   .nav-item-icon-container {
     background-color: var(--sys-primary-container);

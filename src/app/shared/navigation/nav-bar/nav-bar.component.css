@@ -1,5 +1,5 @@
 #navigation-bar {
-  background-color: var(--sys-surface);
+  background-color: var(--sys-surface-container);
 }
 
 #destinations {

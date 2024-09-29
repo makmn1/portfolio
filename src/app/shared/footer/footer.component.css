@@ -35,3 +35,14 @@ footer {
     text-decoration: none;
   }
 }
+
+@media (max-width: 600px) {
+  .symbol-large {
+    transform: scale(1.5);
+  }
+
+  .icons {
+    width: 32px;
+    height: 32px;
+  }
+}

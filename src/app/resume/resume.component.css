@@ -1,15 +1,13 @@
 #resume-view-container {
-  width: 100%;
+  width: 90vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#resume-view-container {
-  width: 100%;
+.pdf-container {
   aspect-ratio: 16 / 9;
-  max-height: 100vh;
 }
 
 #resume-view-container iframe {
