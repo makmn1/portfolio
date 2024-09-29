@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import {RouterLink, RouterLinkActive} from "@angular/router";
 import {MatIcon} from "@angular/material/icon";
-import {NavigationItemComponent} from "./navigation-item/navigation-item.component";
+import {NavigationItemComponent} from "../navigation-item/navigation-item.component";
 
 @Component({
   selector: 'app-navigation',

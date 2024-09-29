@@ -1,0 +1,14 @@
+#navigation-bar {
+  background-color: var(--sys-surface);
+}
+
+#destinations {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-bar-item {
+  flex-grow: 1;
+}

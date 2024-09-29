@@ -28,9 +28,8 @@
               }
             ],
             "styles": [
-              "src/styles/custom-theme.scss",
-              "src/styles/root.scss",
-              "src/styles.css"
+              "src/styles/m3-theme.scss",
+              "src/styles.scss"
             ],
             "scripts": []
           },
@@ -89,7 +88,8 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles/m3-theme.scss",
+              "src/styles.scss"
             ],
             "scripts": []
           }
