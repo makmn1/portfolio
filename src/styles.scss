@@ -17,13 +17,10 @@ body {
   margin: 0;
   min-height: 100vh;
 
-  @include mat.all-component-themes(m3-theme.$light-theme);
-
-  @include mat.system-level-colors(m3-theme.$light-theme);
-  @include mat.system-level-typography(m3-theme.$light-theme);
-
   background-color: var(--sys-background);
   color: var(--sys-on-surface);
+
+  @include mat.all-component-themes(m3-theme.$light-theme);
 }
 
 .symbol-large {
@@ -34,6 +31,11 @@ body {
 .fade-in-hidden {
   opacity: 0;
   transform: translateY(-50px);
+}
+
+.light-theme {
+  @include mat.system-level-colors(m3-theme.$light-theme);
+  @include mat.system-level-typography(m3-theme.$light-theme);
 }
 
 .dark-theme {

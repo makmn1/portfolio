@@ -4,6 +4,7 @@ import {NavigationComponent} from "../navigation/nav-rail/navigation.component";
 import {FooterComponent} from "../footer/footer.component";
 import {NavBarComponent} from "../navigation/nav-bar/nav-bar.component";
 import {BreakpointObserver, Breakpoints} from "@angular/cdk/layout";
+import {ThemeToggleComponent} from "../theme-toggle/theme-toggle.component";
 
 @Component({
   selector: 'app-layout',
@@ -12,7 +13,8 @@ import {BreakpointObserver, Breakpoints} from "@angular/cdk/layout";
     RouterOutlet,
     NavigationComponent,
     FooterComponent,
-    NavBarComponent
+    NavBarComponent,
+    ThemeToggleComponent
   ],
   templateUrl: './layout.component.html',
   styleUrl: './layout.component.css'

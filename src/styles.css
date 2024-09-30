@@ -395,6 +395,8 @@ html, body {
 body {
   margin: 0;
   min-height: 100vh;
+  background-color: var(--sys-background);
+  color: var(--sys-on-surface);
   --mat-app-background-color: var(--sys-background);
   --mat-app-text-color: var(--sys-on-background);
   --mat-app-elevation-shadow-level-0: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 0px rgba(0, 0, 0, 0.14), 0px 0px 0px 0px rgba(0, 0, 0, 0.12);
@@ -1271,6 +1273,22 @@ body {
   --mat-tree-node-text-size: var(--sys-body-large-size);
   --mat-tree-node-text-weight: var(--sys-body-large-weight);
   --mat-tree-node-min-height: 48px;
+}
+.mat-theme-loaded-marker {
+  display: none;
+}
+
+.symbol-large {
+  transform: scale(2);
+  color: initial;
+}
+
+.fade-in-hidden {
+  opacity: 0;
+  transform: translateY(-50px);
+}
+
+.light-theme {
   --sys-background: #faf8ff;
   --sys-error: #ba1a1a;
   --sys-error-container: #ffdad6;
@@ -1412,21 +1430,6 @@ body {
   --sys-title-small-size: 0.875rem;
   --sys-title-small-tracking: 0.006rem;
   --sys-title-small-weight: 500;
-  background-color: var(--sys-background);
-  color: var(--sys-on-surface);
-}
-.mat-theme-loaded-marker {
-  display: none;
-}
-
-.symbol-large {
-  transform: scale(2);
-  color: initial;
-}
-
-.fade-in-hidden {
-  opacity: 0;
-  transform: translateY(-50px);
 }
 
 .dark-theme {
