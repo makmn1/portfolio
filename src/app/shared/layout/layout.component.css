@@ -93,4 +93,6 @@
   background-color: var(--sys-surface);
   overflow: hidden;
   box-sizing: border-box;
+
+  padding: 0 env(safe-area-inset-right) 0 env(safe-area-left);
 }
