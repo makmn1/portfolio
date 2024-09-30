@@ -11,13 +11,11 @@
   padding: 16px;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 450px) or (max-height: 450px) {
   .nav-item-padded {
     padding: 8px 4px;
   }
 }
-
-
 
 .nav-item.active {
   .nav-item-icon-container {
