@@ -4,13 +4,24 @@
   </div>
   <div class="footer-icons">
     <a [routerLink]="['/app/contact']">
-      <mat-icon class="symbol-large" fontSet="material-symbols-outlined">mail</mat-icon>
+      <mat-icon class="symbol-large" [ngClass]="{ 'symbol-dark-theme': currentTheme === 'dark' }" fontSet="material-symbols-outlined">mail</mat-icon>
     </a>
     <a href="https://github.com/makmn1" target="_blank" rel="noopener noreferrer">
-      <img class="icons" ngSrc="assets/social_media_icons/GitHub_Icon.svg" height="48" width="48" alt="github logo"/>
+      <img
+        class="icons"
+        [ngSrc]="'../../../assets/social_media_icons/' + currentTheme + '/GitHub_Icon.svg'"
+        height="48"
+        width="48"
+        alt="github logo"
+      />
     </a>
     <a href="https://www.linkedin.com/in/mohamedx2/" target="_blank" rel="noopener noreferrer">
-      <img class="icons" ngSrc="assets/social_media_icons/LinkedIn_Icon.svg" height="48" width="48" alt="linkedin logo"/>
+      <img
+        class="icons"
+        [ngSrc]="'../../../assets/social_media_icons/' + currentTheme + '/LinkedIn_Icon.svg'"
+        height="48"
+        width="48"
+        alt="linkedin logo"/>
     </a>
   </div>
 </footer>

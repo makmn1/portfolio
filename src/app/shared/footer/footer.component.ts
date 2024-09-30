@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import {MatIcon} from "@angular/material/icon";
-import {NgOptimizedImage} from "@angular/common";
+import {NgClass, NgOptimizedImage} from "@angular/common";
 import {RouterLink} from "@angular/router";
+import {ThemeService} from "../../../services/theme.service";
 
 @Component({
   selector: 'app-footer',
@@ -9,9 +10,20 @@ import {RouterLink} from "@angular/router";
   imports: [
     MatIcon,
     NgOptimizedImage,
-    RouterLink
+    RouterLink,
+    NgClass
   ],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.css'
 })
-export class FooterComponent {}
+export class FooterComponent {
+  constructor(private themeService: ThemeService) {}
+
+  get currentTheme(): 'light' | 'dark' {
+    if (this.themeService.currentTheme === this.themeService.darkThemeClass) {
+      return 'dark';
+    } else {
+      return 'light';
+    }
+  }
+}
