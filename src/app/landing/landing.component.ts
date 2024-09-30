@@ -3,6 +3,7 @@ import {MatAnchor, MatButton} from "@angular/material/button";
 import {NgOptimizedImage} from "@angular/common";
 import {RouterLink} from "@angular/router";
 import {fadeInMoveDownAnimation} from "../shared/animations/fadeInMoveDown.animation";
+import {ThemeToggleComponent} from "../shared/theme-toggle/theme-toggle.component";
 
 @Component({
   selector: 'app-landing',
@@ -11,7 +12,8 @@ import {fadeInMoveDownAnimation} from "../shared/animations/fadeInMoveDown.anima
     MatButton,
     NgOptimizedImage,
     RouterLink,
-    MatAnchor
+    MatAnchor,
+    ThemeToggleComponent
   ],
   templateUrl: './landing.component.html',
   styleUrl: './landing.component.css',
