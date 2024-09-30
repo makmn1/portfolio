@@ -1,0 +1,46 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* WARNING! If you're viewing this file as a CSS file compiled by Jetbrains File Watcher (or a similar tool),
+ * do NOT make changes to the CSS file, as that will be overridden by File Watcher every time a change is made
+ * to the original SCSS file. Only make changes to the original SCSS file.
+ */
+
+@use '@angular/material' as mat;
+@use './styles/m3-theme';
+
+@include mat.core();
+
+@import 'material-symbols';
+
+html, body { height: 100%; }
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  background-color: var(--sys-background);
+  color: var(--sys-on-surface);
+
+  @include mat.all-component-themes(m3-theme.$light-theme);
+}
+
+.symbol-large {
+  transform: scale(2);
+  color: initial;
+}
+
+.fade-in-hidden {
+  opacity: 0;
+  transform: translateY(-50px);
+}
+
+.light-theme {
+  @include mat.system-level-colors(m3-theme.$light-theme);
+  @include mat.system-level-typography(m3-theme.$light-theme);
+}
+
+.dark-theme {
+  @include mat.all-component-colors(m3-theme.$dark-theme);
+
+  @include mat.system-level-colors(m3-theme.$dark-theme);
+  @include mat.system-level-typography(m3-theme.$dark-theme);
+}

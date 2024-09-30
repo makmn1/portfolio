@@ -84,7 +84,7 @@
     </app-work-card>
 
     <app-work-card
-      imageUrl="assets/logos/NYC_TTP_Logo.png"
+      [imageUrl]="'assets/logos/' + (currentTheme === 'dark' ? 'NYC_TTP_Logo_White.png' : 'NYC_TTP_Logo.png')"
       imageAltText="new york city tech talent pipeline logo"
       title="New York City TTP"
       subtitle="Alum"

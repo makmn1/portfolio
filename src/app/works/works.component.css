@@ -6,8 +6,8 @@
 }
 
 #works-title-container {
-  font-size: 36px;
-  line-height: 44px;
+  font-size: clamp(24px, 4vw, 36px);
+  line-height: clamp(16px, 5vw, 44px);
   font-weight: bold;
 }
 

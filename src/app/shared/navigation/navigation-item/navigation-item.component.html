@@ -1,4 +1,9 @@
-<div class="nav-item" [routerLink]="link" routerLinkActive="active">
+<div
+  class="nav-item"
+  [ngClass]="{ 'nav-item-padded': isNavBarItem }"
+  [routerLink]="link"
+  routerLinkActive="active"
+>
   <div class="nav-item-icon-container">
     <mat-icon fontSet="material-symbols-outlined">{{ icon }}</mat-icon>
   </div>

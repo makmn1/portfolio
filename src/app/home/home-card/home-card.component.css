@@ -4,12 +4,12 @@
   gap: 16px;
 
   padding: 16px;
-  width: 328px;
   border-radius: 12px;
 
   border: var(--sys-outline-variant) solid 1px;
   background-color: var(--sys-surface);
   box-shadow: var(--sys-outline-variant) 0 0 1px 0;
+  box-sizing: border-box;
 }
 
 .card-title {

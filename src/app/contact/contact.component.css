@@ -4,13 +4,10 @@
   align-items: center;
   justify-content: center;
 
-  justify-self: center;
-  align-self: center;
-
-  margin: 32px 0 32px;
+  margin: clamp(8px, 1vw + 8px, 32px) 0 clamp(8px, 1vw + 8px, 32px);
 
   gap: 16px;
-  padding: 0 128px;
+  padding: 0 clamp(16px, 5vw, 128px);
 }
 
 #contact-text-container {
@@ -34,6 +31,7 @@
   font-size: 16px;
   line-height: 24px;
 
+  text-align: center;
   margin: 0;
 }
 
@@ -43,7 +41,8 @@
   justify-content: center;
   align-items: center;
 
-  min-width: 360px;
+  width: clamp(250px, 80vw, 360px);
+  min-width: 250px;
   gap: 16px;
 }
 
