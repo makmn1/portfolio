@@ -19,7 +19,7 @@ export class ResumeComponent implements OnInit {
 
   loadPdf(): void {
     PDFObject.embed(
-      "assets/1705339770_FastTrack%20Blank%20Blankski%20Sept%202023%20-%20Mohamed%20Mohamed.pdf",
+      "assets/Mohamed_Mohamed_Resume_2024.pdf",
       "#resume-view-container"
     );
   }
