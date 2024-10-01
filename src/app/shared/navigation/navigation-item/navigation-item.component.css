@@ -13,7 +13,7 @@
 
 @media (max-width: 450px) or (max-height: 450px) {
   .nav-item-padded {
-    padding: 8px 4px;
+    padding: 8px 4px calc(8px + env(safe-area-inset-bottom));
   }
 }
 
