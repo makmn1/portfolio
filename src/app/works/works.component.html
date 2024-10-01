@@ -23,26 +23,39 @@
     </app-work-card>
 
     <app-work-card
-      imageUrl="assets/logos/Chat_Bubble_By_Alexander_Shatov.jpg"
-      imageAltText="chat bubble"
-      title="Twitter API"
-      subtitle="FastTrack Project: Developer"
-      description="Worked on a team to create a backend API with Spring Boot. Allows users to post, repost, and reply to tweets"
-      primaryLink="https://github.com/makmn1/fasttrack-twitter-api"
+      [imageUrl]="'assets/logos/' + (currentTheme === 'dark' ? 'Spotify_Dark.svg' : 'Spotify_Light.svg')"
+      imageAltText="spotify logo"
+      title="Who's Who?"
+      subtitle="FastTrack Project: Designer & Developer"
+      description="Worked as a duo to design and develop a guess-the-song game using the Spotify API (custom playlists supported!)"
+      primaryLink="https://github.com/Yuji3000/whos-who-angular"
       primaryActionText="View code"
     >
     </app-work-card>
 
     <app-work-card
-      imageUrl="assets/logos/Cook_Systems_Logo.svg"
+      imageUrl="assets/badges/FastTrack_September_2024.png"
       imageAltText="cook systems logo"
       title="Cook Systems"
       subtitle="FastTrack Member"
       description="An intensive 8-week bootcamp with an emphasis on Java, Spring Boot, JavaScript, and Angular"
-      primaryLink="https://www.allaboutfasttrack.com/it-talent"
-      primaryActionText="Visit FastTrack"
-      secondaryLink="https://cooksys.com/"
-      secondaryActionText="Visit Cook Systems"
+      primaryLink="https://www.credential.net/b31d8b6d-9687-41c6-99ad-062f1710e659"
+      primaryActionText="View credential"
+      secondaryLink="https://www.allaboutfasttrack.com/it-talent"
+      secondaryActionText="Visit FastTrack"
+    >
+    </app-work-card>
+
+    <app-work-card
+      imageUrl="assets/badges/CyberSentinel_May_2024.png"
+      imageAltText="correlation one cybersentinel logo"
+      title="Correlation One"
+      subtitle="Challenge Participant"
+      description="A CTF cybersecurity competition. Hosted by Correlation One for the Department of Defense. Ranked top 10%"
+      primaryLink="https://www.credential.net/8fd4e510-31b0-4f35-8ea5-8e2042577754"
+      primaryActionText="View credential"
+      secondaryLink="/assets/badges/CyberSentinel_Performance.jpeg"
+      secondaryActionText="View my results"
     >
     </app-work-card>
 
@@ -50,7 +63,7 @@
       imageUrl="assets/logos/GroupHQ_Logo.png"
       imageAltText="group hq logo"
       title="GroupHQ"
-      subtitle="Self-led Microservices Project"
+      subtitle="Self-led Kubernetes Project"
       description="A project with a focus on learning and applying enterprise-level technology and best practices"
       primaryLink="https://github.com/GroupHQ "
       primaryActionText="View code"
@@ -64,9 +77,9 @@
       imageAltText="shelflife logo"
       title="ShelfLife"
       subtitle="Software Engineer Intern"
-      description="Worked alongside other developers on a food ingredients marketplace using Ruby on Rails"
+      description="Worked alongside senior developers on a food ingredients marketplace using Ruby on Rails, CI / CD, and Docker"
       primaryLink="https://www.linkedin.com/company/shelflifeinc"
-      primaryActionText="View on LinkedIn"
+      primaryActionText="LinkedIn"
     >
     </app-work-card>
 
@@ -79,7 +92,7 @@
       primaryLink="https://kimcmarket.com/"
       primaryActionText="Visit Kim'C Market"
       secondaryLink="https://www.linkedin.com/company/kim-c-market "
-      secondaryActionText="View on LinkedIn"
+      secondaryActionText="LinkedIn"
     >
     </app-work-card>
 
@@ -88,11 +101,11 @@
       imageAltText="new york city tech talent pipeline logo"
       title="New York City TTP"
       subtitle="Alum"
-      description="Participated in full stack web developer training with React, Node.js, and Postgres, as well as career readiness training"
+      description="Participated in full-stack web developer training with React, Node, Postgres, as well as career readiness training"
       primaryLink="https://techtalentpipeline.nyc/"
       primaryActionText="Visit NYC TTP"
       secondaryLink="https://www.linkedin.com/company/nyc-tech-talent-pipeline"
-      secondaryActionText="View on LinkedIn"
+      secondaryActionText="LinkedIn"
     >
     </app-work-card>
 
@@ -119,7 +132,7 @@
       primaryLink="https://www.renafrique.com/LandingPage/"
       primaryActionText="Visit STEMKasa"
       secondaryLink="https://www.linkedin.com/company/stemkasa"
-      secondaryActionText="View on LinkedIn"
+      secondaryActionText="LinkedIn"
     >
     </app-work-card>
 
