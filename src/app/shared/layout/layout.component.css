@@ -59,12 +59,18 @@
 }
 
 .mobile-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   height: 100vh;
 }
 
 .mobile-content-container {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
 
   padding: 16px 16px 0 16px;
 

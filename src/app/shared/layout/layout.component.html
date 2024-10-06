@@ -2,7 +2,9 @@
   <div class="grid-container">
     <app-navigation class="column1-navigation-rail"></app-navigation>
     <div class="content">
-      <app-theme-toggle class="theme-toggle theme-toggle-large"></app-theme-toggle>
+      @if (!hideThemeToggle) {
+        <app-theme-toggle class="theme-toggle theme-toggle-large"></app-theme-toggle>
+      }
       <router-outlet></router-outlet>
     </div>
     <app-footer class="footer"></app-footer>
@@ -11,7 +13,9 @@
   <div class="mobile-container">
     <div class="mobile-content-container">
       <div class="mobile-content">
-        <app-theme-toggle class="theme-toggle theme-toggle-compact"></app-theme-toggle>
+        @if (!hideThemeToggle) {
+          <app-theme-toggle class="theme-toggle theme-toggle-compact"></app-theme-toggle>
+        }
         <router-outlet></router-outlet>
       </div>
       <app-footer class="footer"></app-footer>

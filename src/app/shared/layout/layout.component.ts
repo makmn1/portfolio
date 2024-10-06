@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {RouterOutlet} from "@angular/router";
+import {Router, RouterOutlet} from "@angular/router";
 import {NavigationComponent} from "../navigation/nav-rail/navigation.component";
 import {FooterComponent} from "../footer/footer.component";
 import {NavBarComponent} from "../navigation/nav-bar/nav-bar.component";
@@ -22,13 +22,18 @@ import {ThemeToggleComponent} from "../theme-toggle/theme-toggle.component";
 export class LayoutComponent implements OnInit {
 
   isSmallScreen: boolean = false;
+  hideThemeToggle: boolean = false;
 
-  constructor(private breakpointObserver: BreakpointObserver) {}
+  constructor(private breakpointObserver: BreakpointObserver, private router: Router) {}
 
   ngOnInit() {
     this.breakpointObserver.observe([Breakpoints.Small, Breakpoints.Handset])
       .subscribe(result => {
         this.isSmallScreen = result.matches;
       });
+
+    this.router.events.subscribe(() => {
+      this.hideThemeToggle = this.router.url === '/app/resume'
+    })
   }
 }
